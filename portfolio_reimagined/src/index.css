@@ -1,0 +1,30 @@
+/* @import "tailwindcss";
+
+@theme{
+    --color-custombg: #0E0B17;
+    --color-custom2bg: #550497;
+}
+ */
+
+
+ @import "tailwindcss";
+
+@theme {
+  --color-custombg: #0E0B17;
+  --color-custompurple: #2D1B69;
+  --color-customdark: #1A1033;
+}
+
+@layer utilities {
+  .bg-gradient-custom {
+    background: linear-gradient(135deg, var(--color-custombg) 0%, var(--color-custompurple) 100%);
+  }
+  
+  .bg-gradient-custom-vertical {
+    background: linear-gradient(180deg, var(--color-custombg) 0%, var(--color-customdark) 100%);
+  }
+  
+  .bg-gradient-custom-diagonal {
+    background: linear-gradient(45deg, var(--color-custombg) 0%, var(--color-custompurple) 50%, var(--color-customdark) 100%);
+  }
+}
