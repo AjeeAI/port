@@ -117,7 +117,7 @@ const Projects = () => {
                   aria-label={`View live demo of ${project.name}`}
                   className="flex-1 max-w-32"
                 >
-                  <div className='w-full h-10 bg-white rounded-lg flex justify-center items-center hover:bg-gray-100 transition-colors font-medium'>
+                  <div className='w-full h-10 bg-purple-500 text-white rounded-lg flex justify-center items-center hover:bg-gray-100 transition-colors font-medium'>
                     Live Demo
                   </div>
                 </a>
@@ -141,7 +141,7 @@ const Projects = () => {
       <p className='text-white text-2xl font-bold mt-10'>Interested in collaborating?</p>
       <p className='text-white text-md mt-3'>Let's build something amazing together. Reach out to discuss your project.</p>
 
-      <button className='bg-purple-400 w-30 h-8 rounded-lg my-4'>
+      <button className='bg-purple-800 w-30 h-8 rounded-lg my-4 text-white'>
         Get in Touch
       </button>
     </div>

@@ -46,63 +46,64 @@ const MessageForm = () => {
     }
 
     return (
-        <div >
-            <form onSubmit={handleSubmit} className='flex flex-col gap-6'>
-                <div className='flex justify-center gap-10'>
-                    <div className='flex flex-col'>
-                        <label className='text-gray-100 mb-2'>Name</label>
+        <div className='w-full max-w-md lg:max-w-full'>
+            <form onSubmit={handleSubmit} className='flex flex-col gap-4 sm:gap-6 w-full'>
+                <div className='flex flex-col sm:flex-row gap-4 sm:gap-6'>
+                    <div className='flex flex-col w-full'>
+                        <label className='text-gray-100 mb-2 text-sm sm:text-base'>Name</label>
                         <input 
                             name='name'
                             value={formData.name}
-                            placeholder='Name'
+                            placeholder='Your Name'
                             onChange={handleChange}
                             type='text'
-                            className='w-60 h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none'
+                            className='w-full h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none text-sm sm:text-base'
                             required
                         />
                     </div>
-                    <div className='flex flex-col'>
-                        <label className='text-gray-100 mb-2'>Email</label>
+                    <div className='flex flex-col w-full'>
+                        <label className='text-gray-100 mb-2 text-sm sm:text-base'>Email</label>
                         <input 
                             name='email'
                             value={formData.email}
-                            placeholder='Email'
+                            placeholder='your.email@example.com'
                             onChange={handleChange}
                             type='email'
-                            className='w-60 h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none'
+                            className='w-full h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none text-sm sm:text-base'
                             required
                         />
                     </div>
                 </div>
-                <div className='flex flex-col '>
-                    <label className='text-gray-100 mb-2'>Subject</label>
+                
+                <div className='flex flex-col'>
+                    <label className='text-gray-100 mb-2 text-sm sm:text-base'>Subject</label>
                     <input 
                         name='subject'
                         value={formData.subject}
-                        placeholder='Subject'
+                        placeholder='Subject of your message'
                         onChange={handleChange}
                         type='text'
-                        className='w-full h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none'
+                        className='w-full h-12 bg-gray-700 text-white rounded-lg px-4 border border-gray-600 focus:border-purple-500 focus:outline-none text-sm sm:text-base'
                         required
                     />
                 </div>
 
-                <div>
-                    <label className='text-gray-100 mb-2'>Message</label>
+                <div className='flex flex-col'>
+                    <label className='text-gray-100 mb-2 text-sm sm:text-base'>Message</label>
                     <textarea 
-                    name='message'
-                    value={formData.message}
-                    placeholder='Message'
-                    onChange={handleChange}
-                    rows={6}
-                    className='w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:border-purple-500 focus:outline-none resize-none mt-2'
-                    required
-                />
+                        name='message'
+                        value={formData.message}
+                        placeholder='Your message here...'
+                        onChange={handleChange}
+                        rows={4}
+                        className='w-full bg-gray-700 text-white rounded-lg px-4 py-3 border border-gray-600 focus:border-purple-500 focus:outline-none resize-none text-sm sm:text-base'
+                        required
+                    />
                 </div>
                 
                 <button 
                     type='submit'
-                    className='w-full h-12 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium'
+                    className='w-full h-12 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors font-medium text-sm sm:text-base mt-2'
                 >
                     Send message
                 </button>

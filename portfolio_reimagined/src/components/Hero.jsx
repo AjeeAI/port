@@ -1,20 +1,31 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaXTwitter } from 'react-icons/fa6';
+import { Link } from 'react-router-dom';
 const Hero = () => {
   return (
-    <div className='flex w-full h-screen justify-center items-center bg-gradient-custom p-6 mx-6'>
+    <div className='flex w-full h-screen justify-center items-center bg-gradient-custom p-6'>
        <div className='p-4'> 
-        <p className='text-7xl text-white font-bold text-center'>Ajijolaoluwa Adesoji-Fullstack Developer</p>
-        <p className='text-md text-white mt-5 text-center'>Building seamless web experiences across mobile and web</p>
+        <p className='text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white font-bold text-center leading-tight'>
+  Ajijolaoluwa Adesoji-Fullstack Developer
+</p>
+
+<p className='text-sm sm:text-base md:text-lg text-white mt-5 text-center'>
+  Building seamless web experiences across mobile and web
+</p>
+
 
         <div className='flex justify-center mt-10 gap-10'>
-            <button className='border-2 w-40 h-12 bg-orange-500 text-black font-bold rounded-xl'>
-                View Projects
-            </button>
+            <Link to="/projects">
+                <button className='border-2 w-40 h-12 bg-orange-500 text-black font-bold rounded-xl'>
+                    View Projects
+                </button>
+            </Link>
 
-            <button className='border-2 border-white w-40 h-12 text-white rounded-xl font-bold'>
-                Contact Me
-            </button>
+            <Link to="/contact">
+                <button className='border-2 border-white w-40 h-12 text-white rounded-xl font-bold'>
+                    Contact Me
+                </button>
+            </Link>
         </div>
 
         <div className='flex justify-center mt-10 gap-10'>
