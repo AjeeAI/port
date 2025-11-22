@@ -12,7 +12,7 @@ import {
 import { SiFlutter, SiDart, SiFastapi } from 'react-icons/si';
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+import avatar from "/src/assets/avatar2.jpg"
 const About = () => {
     const skills = [
   { name: "Flutter", icon: <SiFlutter className="w-8 h-8 sm:w-10 sm:h-10" color='white'/> },
@@ -35,7 +35,7 @@ const About = () => {
             {/* Profile Image */}
             <div className='flex justify-center lg:justify-start'>
                 <img 
-                    src='src\\assets\\avatar2.jpg'
+                    src={avatar}
                     alt='Profile Image'
                     className='rounded-full w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 xl:w-80 xl:h-80 object-cover'
                 />

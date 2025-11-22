@@ -1,5 +1,6 @@
 import React from 'react'
-
+import dash from "/src/assets/dash_img.png"
+import mols_img from "/src/assets/mols_auth.png"
 const Projects = () => {
 
   const projects = [
@@ -7,7 +8,7 @@ const Projects = () => {
     "name": "React Admin Dashboard",
     "details": "A complex data visualization and management tool for business analytics.",
     "stack": ["React", "Chart.js", "Tailwind"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://your-live-dashboard-link.com",
     "github_link": "https://github.com/yourusername/react-admin-dashboard"
   },
@@ -15,7 +16,7 @@ const Projects = () => {
     "name": "E-commerce Mobile App",
     "details": "A mobile shopping platform with integrated product browsing, cart, and checkout features.",
     "stack": ["Flutter", "PHP", "MySQL"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://your-ecommerce-live-link.com",
     "github_link": "https://github.com/yourusername/ecommerce-mobile-app"
   },
@@ -23,7 +24,7 @@ const Projects = () => {
     "name": "Krazy Kitchen Katerers Website",
     "details": "A responsive catering website with order management and gallery features.",
     "stack": ["Flutter", "PHP", "MySQL"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://krazykitchen-live-link.com",
     "github_link": "https://github.com/yourusername/krazy-kitchen-website"
   },
@@ -31,7 +32,7 @@ const Projects = () => {
     "name": "Hybrid Form Application",
     "details": "A form capturing app that integrates phone number, GPS, photo, and microphone input with API backend.",
     "stack": ["Flutter", "PHP", "MySQL", "API Integration"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://your-hybrid-form-live-link.com",
     "github_link": "https://github.com/yourusername/hybrid-form-app"
   },
@@ -39,7 +40,7 @@ const Projects = () => {
     "name": "Blog Management System",
     "details": "A blog platform with database integration supporting special characters and structured content storage.",
     "stack": ["Flutter", "PHP", "MySQL"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://your-blog-live-link.com",
     "github_link": "https://github.com/yourusername/blog-management-system"
   },
@@ -47,7 +48,7 @@ const Projects = () => {
     "name": "OTP Generation & Authentication System",
     "details": "Generates one-time passwords with advanced randomness assessment, supporting multi-authentication schemes.",
     "stack": ["Python", "MOLS", "RBIBD"],
-    "thumbnail": "src\\assets\\mols_auth.png",
+    "thumbnail": mols_img,
     "live_link": "https://your-otp-system-live-link.com",
     "github_link": "https://github.com/yourusername/otp-auth-system"
   },
@@ -55,7 +56,7 @@ const Projects = () => {
     "name": "IoT Multi-Authentication Project",
     "details": "A research-driven application using Mutually Orthogonal Latin Squares (MOLS) for IoT device authentication.",
     "stack": ["Python", "MOLS", "RBIBD", "IoT Security"],
-    "thumbnail": "src\\assets\\mols_auth.png",
+    "thumbnail": mols_img,
     "live_link": "https://your-iot-auth-live-link.com",
     "github_link": "https://github.com/yourusername/iot-multi-authentication"
   },
@@ -63,7 +64,7 @@ const Projects = () => {
     "name": "FastAPI Admin Login System",
     "details": "Backend system for secure admin login with environment-based password management.",
     "stack": ["Python", "FastAPI", "SQLAlchemy", "dotenv"],
-    "thumbnail": "src\\assets\\dash_img.png",
+    "thumbnail": dash,
     "live_link": "https://your-fastapi-login-live-link.com",
     "github_link": "https://github.com/yourusername/fastapi-admin-login"
   }
@@ -74,7 +75,7 @@ const Projects = () => {
     <div className='mt-10 flex flex-col justify-between items-center'>
         <h1 className='text-white font-bold text-2xl'>Selected Projects</h1>
 
-        <p className='text-white font-md my-3'>Here is a selection of my recent Projects. Hover over a card for more details and links.</p>
+        <p className='text-white font-md my-3'>Here is a selection of my recent Projects. Click on the links for a live preview or github code.</p>
 
         <div className='flex w-full flex-wrap justify-center items-center'>
   {projects.map((project) => (
